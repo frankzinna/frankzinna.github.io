@@ -38,26 +38,20 @@
   })();
 </script>
   <meta name="generator" content="Gridea Pro 1.2.2">
-  <title>和啦啦啦啦啦老婆 | 古意人博客</title>
+  <title>闪念 | 古意人博客</title>
   
-<meta property="og:title" content="和啦啦啦啦啦老婆" />
-<meta property="og:type" content="article" />
-
-
-<meta name="description" content="辅导">
-<link rel="canonical" href="https://frankzinna.github.io/post/he-la-la-la-la-la-lao-po/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"和啦啦啦啦啦老婆","url":"https://frankzinna.github.io/post/he-la-la-la-la-la-lao-po/","description":"辅导","datePublished":"2026-09-07T00:02:03+08:00","dateModified":"2026-09-07T00:02:03+08:00","author":{"@type":"Person","name":"古意人博客"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/avatar.png"},"name":"古意人博客"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://frankzinna.github.io","name":"古意人博客","position":1},{"@type":"ListItem","item":"https://frankzinna.github.io/post/he-la-la-la-la-la-lao-po/","name":"和啦啦啦啦啦老婆","position":2}]}</script>
-<meta property="og:title" content="和啦啦啦啦啦老婆">
-<meta property="og:description" content="辅导">
-<meta property="og:url" content="https://frankzinna.github.io/post/he-la-la-la-la-la-lao-po/">
-<meta property="og:type" content="article">
+<link rel="canonical" href="https://frankzinna.github.io/memos/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"古意人博客","url":"https://frankzinna.github.io","description":"","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":"https://frankzinna.github.io/search?q={search_term_string}"}}</script>
+<meta property="og:title" content="古意人博客">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://frankzinna.github.io/memos/">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="古意人博客">
 <meta property="og:image" content="/images/avatar.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://frankzinna.github.io/post/he-la-la-la-la-la-lao-po/">
-<meta name="twitter:title" content="和啦啦啦啦啦老婆">
-<meta name="twitter:description" content="辅导">
+<meta name="twitter:url" content="https://frankzinna.github.io/memos/">
+<meta name="twitter:title" content="古意人博客">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="/images/avatar.png">
 </head>
 <body class="flavor-theme">
@@ -181,54 +175,151 @@
 
   <main class="site-main" role="main">
     
-<article class="article-container">
-  <header class="article-header">
-    <h1 class="article-title">和啦啦啦啦啦老婆</h1>
-    <div class="article-meta">
-      
-      <span class="article-meta__item">2026-09-07</span>
-      
-      <span class="article-meta__sep">·</span>
-      <span class="article-meta__item">1 分钟阅读</span>
-      
-    </div>
-    
-  </header>
-
-  
-
-  <div class="article-content">
-    <p>辅导</p>
-
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title">闪念</h1>
+    <p class="page-subtitle">灵感碎片与随想</p>
   </div>
 
   
-  <nav class="post-nav">
-    
-    <a href="/post/fa-de-fa-sheng-de/" class="post-nav-card post-nav-card--prev">
-      
-      <div class="post-nav-card__body">
-        <span class="post-nav-card__label meta-text">上一篇</span>
-        <span class="post-nav-card__title">发的发生的</span>
+
+  
+  <div class="heatmap-wrap">
+    <div id="heatmap-root"></div>
+    <div class="heatmap-footer">
+      <span id="heatmap-total"></span>
+      <div class="heatmap-legend">
+        <span>少</span>
+        <span class="heatmap-legend-cell" data-level="0"></span>
+        <span class="heatmap-legend-cell" data-level="1"></span>
+        <span class="heatmap-legend-cell" data-level="2"></span>
+        <span class="heatmap-legend-cell" data-level="3"></span>
+        <span class="heatmap-legend-cell" data-level="4"></span>
+        <span>多</span>
       </div>
-      <span class="post-nav-card__arrow">&larr;</span>
-    </a>
+    </div>
+  </div>
+  
+
+  <div class="memo-timeline">
     
-    
-    <div class="post-nav-card post-nav-card--empty post-nav-card--next">
-      <div class="post-nav-card__body">
-        <span class="post-nav-card__label meta-text">下一篇</span>
-        <span class="post-nav-card__empty-text">没有下一篇了~</span>
+    <div class="memo-item" data-created="2026-09-06">
+      <div class="memo-item__marker"></div>
+      <div class="memo-item__card">
+        <div class="memo-item__content article-content">
+          <p>hello world</p>
+
+        </div>
+        <time class="memo-item__date meta-text">2026-09-06</time>
       </div>
     </div>
     
-  </nav>
+  </div>
 
   
+  <script>
+    (function () {
+      var items = document.querySelectorAll('.memo-item');
+      if (!items.length) return;
+
+      var heatmapData = {};
+      items.forEach(function (item) {
+        var d = item.getAttribute('data-created');
+        if (d) {
+          var dateStr = d.substring(0, 10);
+          heatmapData[dateStr] = (heatmapData[dateStr] || 0) + 1;
+        }
+      });
+
+      var MONTHS = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+      var DAYS = ['日', '一', '二', '三', '四', '五', '六'];
+
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      var endDay = today.getDay();
+      var totalDays = 52 * 7 + endDay + 1;
+      var startDate = new Date(today);
+      startDate.setDate(startDate.getDate() - totalDays + 1);
+      startDate.setDate(startDate.getDate() - startDate.getDay());
+
+      var totalWeeks = Math.ceil(totalDays / 7);
+
+      var weeks = [];
+      for (var w = 0; w < totalWeeks; w++) {
+        var week = [];
+        for (var d = 0; d < 7; d++) {
+          var cellDate = new Date(startDate);
+          cellDate.setDate(cellDate.getDate() + w * 7 + d);
+          var key = cellDate.getFullYear() + '-' + String(cellDate.getMonth() + 1).padStart(2, '0') + '-' + String(cellDate.getDate()).padStart(2, '0');
+          var count = heatmapData[key] || 0;
+          var level = count === 0 ? 0 : count === 1 ? 1 : count <= 3 ? 2 : count <= 5 ? 3 : 4;
+          var future = cellDate > today;
+          week.push({ date: cellDate, key: key, count: count, level: level, future: future, month: cellDate.getMonth() });
+        }
+        weeks.push(week);
+      }
+
+      var monthLabels = [];
+      var lastMonth = -1;
+      for (var w = 0; w < weeks.length; w++) {
+        var firstDay = weeks[w][0];
+        if (!firstDay.future && firstDay.month !== lastMonth) {
+          monthLabels.push({ weekIndex: w, label: MONTHS[firstDay.month] });
+          lastMonth = firstDay.month;
+        }
+      }
+      // 过滤 colspan 小于 2 的月份标签（避免两端出现 1 列宽的残月）
+      monthLabels = monthLabels.filter(function (m, i) {
+        var next = i + 1 < monthLabels.length ? monthLabels[i + 1].weekIndex : weeks.length;
+        return next - m.weekIndex >= 2;
+      });
+
+      var html = '<table>';
+      html += '<tr><td class="heatmap-day-label"></td>';
+      var monthColIdx = 0;
+      for (var w = 0; w < totalWeeks; w++) {
+        if (monthColIdx < monthLabels.length && monthLabels[monthColIdx].weekIndex === w) {
+          var nextIdx = monthColIdx + 1 < monthLabels.length ? monthLabels[monthColIdx + 1].weekIndex : totalWeeks;
+          var span = nextIdx - w;
+          html += '<td colspan="' + span + '" class="heatmap-month-label">' + monthLabels[monthColIdx].label + '</td>';
+          w += span - 1;
+          monthColIdx++;
+        } else {
+          html += '<td class="heatmap-month-label"></td>';
+        }
+      }
+      html += '</tr>';
+
+      for (var d = 0; d < 7; d++) {
+        html += '<tr>';
+        html += '<td class="heatmap-day-label">' + DAYS[d] + '</td>';
+        for (var w = 0; w < weeks.length; w++) {
+          var c = weeks[w][d];
+          if (c.future) {
+            html += '<td class="cell" data-level="0"></td>';
+          } else {
+            html += '<td class="cell" data-level="' + c.level + '" title="' + c.key + '：' + c.count + ' 条闪念"></td>';
+          }
+        }
+        html += '</tr>';
+      }
+      html += '</table>';
+
+      var root = document.getElementById('heatmap-root');
+      if (root) root.innerHTML = html;
+      var totalEl = document.getElementById('heatmap-total');
+      if (totalEl) totalEl.textContent = '过去一年共 ' + items.length + ' 条闪念';
+
+      setTimeout(function () {
+        var wrap = document.querySelector('.heatmap-wrap');
+        if (wrap) wrap.scrollLeft = wrap.scrollWidth;
+      }, 100);
+    })();
+  </script>
   
 
-
-</article>
+  
+</div>
 
   </main>
 
